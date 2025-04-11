@@ -3,6 +3,8 @@ import Hero from './components/Hero';
 import Gallery from './components/Gallery';
 import Footer from './components/Footer';
 import emailjs from '@emailjs/browser';
+import ChatWidget from './components/ChatWidget';
+
 import { useRef } from 'react';
 
 export default function App() {
@@ -189,7 +191,8 @@ export default function App() {
       >
         ↑ Back to Top
       </button>
-
+      
+      <ChatWidget />
       <Footer />
     </>
   );
