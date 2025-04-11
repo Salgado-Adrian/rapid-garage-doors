@@ -177,7 +177,7 @@ export default function App() {
         </form>
 
         <div className="mt-12 text-center text-gray-700">
-          <p className="mb-1 text-lg">📧 <strong>Email:</strong> rapidgarage@hotmail.com</p>
+          <p className="mb-1 text-lg">📧 <strong>Email:</strong> rapidgaragedoors@gmail.com</p>
           <p className="text-lg">📍 <strong>Broward:</strong> <a href="tel:9548822728" className="hover:text-yellow-500">954-882-2728</a></p>
           <p className="text-lg">📍 <strong>West Palm Beach:</strong> <a href="tel:5616993222" className="hover:text-yellow-500">561-699-3222</a></p>
         </div>
