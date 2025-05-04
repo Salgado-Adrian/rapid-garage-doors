@@ -125,58 +125,7 @@ export default function App() {
           Let us know what issue you're having with your garage door. We offer emergency service 24/7 and will get back to you as soon as possible.
         </p>
 
-        <form
-          ref={form}
-          onSubmit={sendEmail}
-          className="max-w-2xl mx-auto space-y-6 bg-white p-10 rounded-2xl shadow-2xl border border-gray-200"
-        >
-          <div>
-            <label className="block text-gray-700 font-medium mb-2 text-left">Name</label>
-            <input
-              name="name"
-              type="text"
-              required
-              placeholder="John Doe"
-              className="w-full border border-gray-300 px-5 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400 transition"
-            />
-          </div>
-          <div>
-            <label className="block text-gray-700 font-medium mb-2 text-left">Email</label>
-            <input
-              name="email"
-              type="email"
-              required
-              placeholder="you@example.com"
-              className="w-full border border-gray-300 px-5 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400 transition"
-            />
-          </div>
-          <div>
-            <label className="block text-gray-700 font-medium mb-2 text-left">Phone</label>
-            <input
-              name="phone"
-              type="tel"
-              required
-              placeholder="(123) 456-7890"
-              className="w-full border border-gray-300 px-5 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400 transition"
-            />
-          </div>
-          <div>
-            <label className="block text-gray-700 font-medium mb-2 text-left">What problem are you experiencing?</label>
-            <textarea
-              name="message"
-              rows="5"
-              required
-              placeholder="My garage door won't close..."
-              className="w-full border border-gray-300 px-5 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400 transition"
-            ></textarea>
-          </div>
-          <button
-            type="submit"
-            className="w-full bg-yellow-500 hover:bg-yellow-600 text-black font-semibold py-3 rounded-lg transition duration-300 hover:shadow-lg"
-          >
-            Submit Request
-          </button>
-        </form>
+       
 
         <div className="mt-12 text-center text-gray-700">
           <p className="mb-1 text-lg">📧 <strong>Email:</strong> rapidgaragedoors@gmail.com</p>

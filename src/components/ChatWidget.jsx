@@ -6,13 +6,15 @@ export default function ChatWidget() {
 
   const qa = {
     'How much is spring replacement?':
-      '💰 Spring replacement typically ranges from $149–$199 depending on your door size and spring type.',
+      '💰 Spring replacement typically ranges from $250–$575 depending on your door size and spring type.',
     'Do you offer 24/7 emergency service?':
       '🚨 Yes! We offer emergency garage door repair 24 hours a day, 7 days a week.',
     'Where do you service?':
       '📍 We service Broward County and West Palm Beach with same-day availability.',
     'How much does opener installation cost?':
-      '🔧 Garage door opener installs usually start at $299 depending on the model and motor type.'
+      '🔧 Garage door opener installs usually start at $475 depending on the model and motor type.',
+    'Free Estimates':
+      '🆓 We provide free estimates for all garage door repairs and installations. Just give us a call!',
   };
 
   return (

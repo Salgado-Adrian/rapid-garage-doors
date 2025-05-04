@@ -10,7 +10,10 @@ export default function Navbar() {
   const scrollTo = (id) => {
     const section = document.querySelector(id);
     if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
+      const yOffset = -100; // adjust based on your navbar height
+      const y = section.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+      window.scrollTo({ top: y, behavior: "smooth" });
       setMenuOpen(false);
     }
   };
@@ -18,11 +21,16 @@ export default function Navbar() {
   return (
     <nav className="bg-white shadow-md sticky top-0 z-50">
       <div className="max-w-6xl mx-auto px-4 py-4 flex flex-col sm:flex-row justify-between sm:items-center">
-        <div className="flex justify-between items-center w-full sm:w-auto">
-          <h1 className="text-2xl font-bold text-gray-900">Rapid Garage Doors</h1>
+        <div className="flex flex-col sm:flex-row sm:items-center">
+          <div>
+            <h1 className="text-2xl font-bold text-gray-900">Rapid Garage Doors</h1>
+            <p className="text-sm text-gray-500">License and Insurance</p>
+            <p className="text-sm text-gray-500">Broward: CC #12 -GD-13082-X</p>
+            <p className="text-sm text-gray-500">WPB: #U-21813</p>
+          </div>
 
           {/* Mobile menu button */}
-          <div className="sm:hidden">
+          <div className="sm:hidden ml-auto mt-2 sm:mt-0">
             <button onClick={toggleMenu} className="focus:outline-none">
               <svg
                 className="w-6 h-6 text-gray-800"
